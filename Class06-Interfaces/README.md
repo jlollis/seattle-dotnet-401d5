@@ -1,3 +1,6 @@
+![cf](http://i.imgur.com/7v5ASc8.png) Class 05
+=====================================
+
 ## Learning Objectives
 1. The student will understand the difference between inheritance and interfaces.
 2. The student will be able to set up a hierarchy of classes that both inherit from a base class and implement at least one interface. 
