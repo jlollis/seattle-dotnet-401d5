@@ -6,6 +6,7 @@
 2. Students will create a new MVC web app from an empty template
 
 ## Daily Outline
+1. MSFT Inteview Overview
 1. Weekly overview
 2. Feedback Review
 3. Quiz Review
