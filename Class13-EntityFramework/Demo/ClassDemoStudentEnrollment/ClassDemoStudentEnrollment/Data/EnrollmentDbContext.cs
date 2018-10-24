@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ClassDemoStudentEnrollment.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,19 @@ namespace ClassDemoStudentEnrollment.Data
 		{
 
 		}
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<CourseEnrollments>().HasKey(
+				ce => new { ce.CourseID, ce.StudentID }
+				);
+		}
+
+		public DbSet<Student> Students { get; set; }
+
+		public DbSet<Course> Courses { get; set; }
+		public DbSet<Transcript> Transcripts { get; set; }
+		public DbSet<CourseEnrollments> CourseEnrollments { get; set; }
+
 	}
 }
