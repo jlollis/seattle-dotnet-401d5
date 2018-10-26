@@ -89,8 +89,6 @@ using Microsoft.Extensions.DependencyInjection;
 ```
 	
 12. Open up Package Manager Console.
-13. Run the following Commands
-	a. Install the EntityFrameworkCore Tools: Install-Package Microsoft.EntityFrameworkCore.Tools -Version 2.1.0
 14. Add an initial migration to your project. Run the following command in PMC
 	a. Add-Migration initial
 15. After adding a migration, update your database with the "Update-Database" command. 
