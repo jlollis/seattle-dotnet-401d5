@@ -7,6 +7,3 @@
 ## Lecture Outline
 
 ### Entity Framework
-
-
-
