@@ -20,7 +20,7 @@ namespace BlogPostClassDemo.Models
 
 		public async Task SendEmailAsync(string email, string subject, string htmlMessage)
 		{
-			var client = new SendGridClient("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");
+			var client = new SendGridClient(["SendGrid_Api_Key"]);
 
 			var msg = new SendGridMessage();
 
