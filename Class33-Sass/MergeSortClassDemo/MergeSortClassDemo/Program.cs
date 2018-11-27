@@ -6,8 +6,6 @@ namespace MergeSortClassDemo
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
-
 			int[] myArray = { 8, 3, 2, 9, 7, 1, 5, 4, 6 };
 
 			MergeSort(myArray);
@@ -78,6 +76,7 @@ namespace MergeSortClassDemo
 			}
 			else
 			{
+				// copy left array into main array
 				Array.Copy(left, i, arr, k, left.Length - i);
 			}
 
