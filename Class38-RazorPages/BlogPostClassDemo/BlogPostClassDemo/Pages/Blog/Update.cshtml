@@ -1,0 +1,22 @@
+﻿@page "{id?}"
+@model BlogPostClassDemo.Pages.Blog.UpdateModel
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h2>Update</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Blog.ID" />
+
+    <label asp-for="Blog.Title">Title</label>
+    <input asp-for="Blog.Title" />
+
+    <label asp-for="Blog.Content">Content</label>
+    <input asp-for="Blog.Content" />
+
+    <input type="submit" value="UPDATE" />
+
+
+
+</form>
